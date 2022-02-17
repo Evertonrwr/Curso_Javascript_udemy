@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Desafio ABC</title>
+        <script>
+            var nome = prompt("Por favor, digite o seu nome: ")
+            var altura = prompt("Por favor, digite a sua altura em centimetros: ")
+            var peso = prompt("Por favor, digite o seu peso: ")
+
+            altura = parseFloat(altura)
+            peso = parseFloat(peso)
+
+            altura = altura / 100
+
+            var m = peso / (altura*altura)
+
+            if (m < 16){
+                document.write(nome + " possui índice de massa corporal igual a " + m + ", sendo classificado como: Baixo peso muito grave")
+            }else if (m >=16 & m < 17){
+                document.write(nome + " possui índice de massa corporal igual a " + m + ", sendo classificado como: Baixo peso grave")
+            }else if (m >=17 & m < 18.50){
+                document.write(nome + " possui índice de massa corporal igual a " + m + ", sendo classificado como: Baixo peso")
+            }else if (m >= 18.50 &  m < 25){
+                document.write(nome + " possui índice de massa corporal igual a " + m + ", sendo classificado como: Peso normal")
+            }else if (m >= 25 & m < 30){
+                document.write(nome + " possui índice de massa corporal igual a " + m + ", sendo classificado como: Sobrepeso")
+            }else if (m >= 30 & m < 35){
+                document.write(nome + " possui índice de massa corporal igual a " + m + ", sendo classificado como: Obesidade grau I")
+            }else if (m >= 35 & m < 40){
+                document.write(nome + " possui índice de massa corporal igual a " + m + ", sendo classificado como: Obesidade grau II")
+            }else{
+                document.write(nome + " possui índice de massa corporal igual a " + m + ", sendo classificado como: Obesidade grau III")
+            }
+
+
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
