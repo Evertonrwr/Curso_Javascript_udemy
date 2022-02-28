@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Desafio ABC</title>
+        <script>
+            function acao1(){
+                document.getElementById('nave').style.background = "yellow"
+            }
+            function acao2(){
+               var caracter = document.getElementById('nave').value
+            
+             if (caracter.length<3){
+                document.getElementById('nave').style.background = "red"
+
+             }else{
+                document.getElementById('nave').style.background = "green"
+
+             }
+            }
+    
+        </script>
+        </head>
+ 
+    <body>
+        <input id="nave" onfocus="acao1()" onblur="acao2()" type="text"  placeholder="Digite.."/>
+
+    </body>
+ 
+</html>
