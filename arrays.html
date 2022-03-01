@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ARRAY</title>
+        <script>
+            var objetos = Array('Cadeira', 'Impressora', 'Garfo')
+
+            function adicionarArray(){
+               var movel = document.getElementById('objc').value 
+               if (!movel){
+                   alert('Digite um objeto valido');
+               }else if (movel === objetos[0] || movel === objetos[1] || movel === objetos[2]){
+                alert('Objeto já existe');
+               }else {
+                   objetos.push(movel)
+                   console.log(objetos)
+               }
+               document.getElementById('objc').value = ''
+            }
+            function ordenarArray(){
+                objetos.sort()
+                console.log(objetos)
+            }
+   
+
+        </script>
+    </head>
+    <body>
+        <input id="objc" type="text" placeholder="Digite um objeto.."/>
+        <button onclick="adicionarArray()" id="adicionar" type="button">Adicionar</button>
+        <button onclick="ordenarArray()"id="ordenar" type="button">Ordenar</button>
+    </body>
+</html>
